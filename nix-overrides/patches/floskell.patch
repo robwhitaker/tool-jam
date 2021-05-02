@@ -1,0 +1,13 @@
+diff --git a/src/Floskell/Pretty.hs b/src/Floskell/Pretty.hs
+index 867e897..823bd9b 100644
+--- a/src/Floskell/Pretty.hs
++++ b/src/Floskell/Pretty.hs
+@@ -591,7 +591,7 @@ prettyConDecls condecls = do
+     flex' = withLayout cfgLayoutConDecls flexDecls' verticalDecls'
+
+     vertical = do
+-        operatorV Declaration "="
++        operator Declaration "="
+         withLayout cfgLayoutConDecls flexDecls verticalDecls
+
+     vertical' = withLayout cfgLayoutConDecls flexDecls' verticalDecls'
