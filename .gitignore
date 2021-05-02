@@ -5,6 +5,7 @@ dist-newstyle/
 
 # Nix output
 result
+result-doc
 
 # Direnv
 .direnv/

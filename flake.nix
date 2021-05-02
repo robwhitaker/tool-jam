@@ -19,11 +19,7 @@
             let
               hsOverride = pkg: final.callPackage (./nix-overrides + "/${pkg}.nix") {};
             in {
-              floskell = prev.floskell.overrideAttrs (_: {
-                patches = [ ./nix-overrides/patches/floskell.patch ];
-              });
               relude = final.relude_1_0_0_1;
-
               taskd = final.callPackage ./. {};
             };
         };

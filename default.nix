@@ -1,6 +1,5 @@
-{ mkDerivation, base, containers, directory, filepath, fsnotify
-, lib, path, path-io, record-dot-preprocessor, record-hasfield
-, relude, text
+{ mkDerivation, base, containers, data-default, fsnotify, lib, path
+, path-io, relude, text
 }:
 mkDerivation {
   pname = "taskd";
@@ -9,8 +8,7 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    base containers directory filepath fsnotify path path-io
-    record-dot-preprocessor record-hasfield relude text
+    base containers data-default fsnotify path path-io relude text
   ];
   description = "Daemon that handles changes in your ~/tools directory";
   license = lib.licenses.bsd3;
